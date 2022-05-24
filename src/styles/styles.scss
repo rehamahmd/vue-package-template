@@ -1,0 +1,48 @@
+
+button {
+    @include theme;
+    background-color: #cecaca;
+ 
+    border-color: #cecaca;
+    color: #fff;width:167;
+    height:40;
+
+    img{
+       height: 100;
+       width:50;
+    }
+}
+
+input {
+    height: 18px;
+    border: 1px solid #333;
+}
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .message {
+    @extend %message-shared;
+  }
+  
+  .success {
+    @extend %message-shared;
+    border-color: green;
+  }
+  
+  .error {
+    @extend %message-shared;
+    border-color: red;
+  }
+  
+  .warning {
+    @extend %message-shared;
+    border-color: yellow;
+  }
